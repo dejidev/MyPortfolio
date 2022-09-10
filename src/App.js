@@ -7,6 +7,7 @@ import Project from "./Components/Project";
 import Contact from "./Components/Contact";
 import Loading from "./Components/Loading";
 import Home from "./Components/Home";
+import Resume from "./Components/Resume";
 import SharedLayout from "./Components/SharedLayout";
 
 function App({ show, setShow }) {
@@ -16,7 +17,7 @@ function App({ show, setShow }) {
     <main className={`bg-[#0a192f]  text-[#64ffda] py-5 px-5 md:px-5 relative`}>
       {loading ? (
         <Loading setLoading={setLoading} />
-      ) : ( 
+      ) : (
         <BrowserRouter>
           <Routes>
             <Route
@@ -28,9 +29,10 @@ function App({ show, setShow }) {
               <Route path="/experience" element={<Experience show={show} />} />
               <Route path="/contact" element={<Contact show={show} />} />
               <Route path="/projects" element={<Project show={show} />} />
+              <Route path="/resume" element={<Resume />} />
             </Route>
           </Routes>
-        </BrowserRouter> 
+        </BrowserRouter>
       )}
     </main>
   );

@@ -103,12 +103,16 @@ const Navbar = () => {
             </Link>
           </motion.div>
 
-          <motion.p
-            variants={item}
-            className="border-[#64ffda] px-3 py-1 border rounded-sm hover:bg-[#233554]"
-          >
-            Resume
-          </motion.p>
+          {/* <motion.p variants={item}>Resume</motion.p> */}
+          <motion.div variants={item}>
+            {" "}
+            <Link
+              to="/resume"
+              className="border-[#64ffda] px-3 py-1 border rounded-sm hover:bg-[#233554]"
+            >
+              Resume
+            </Link>
+          </motion.div>
           <span className="text-[#64ffda] italic">&lt;/ul&gt;</span>
         </motion.nav>
 

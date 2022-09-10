@@ -15,7 +15,7 @@ const Social = () => {
         <BsTwitter className="hover:py-1" />
       </a>
       <a
-        href="http://"
+        href="https://github.com/dejidev"
         target="_blank"
         rel="noopener noreferrer "
         className="hover:text-name"
@@ -23,7 +23,7 @@ const Social = () => {
         <TbBrandGithub className="my-5 hover:py-1" />
       </a>
       <a
-        href="http://"
+        href="http://https://www.linkedin.com/in/adetayo-ayodeji-8b51581a2/"
         target="_blank"
         rel="noopener noreferrer"
         className="hover:text-name "

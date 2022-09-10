@@ -32,25 +32,28 @@ const Home = ({ show }) => {
         initial="hidden"
         animate="show"
         transition={{ duration: 0.01, delay: 0.05, staggerChildren: 0.2 }}
-        className="font-extrabold sm:text-8xl text-7xl text-name big tracking-wide sm:pt-3"
+        className="font-extrabold sm:text-8xl text-7xl text-name big tracking-wide sm:pt-3 md:flex"
       >
-        <motion.span variants={item}>A</motion.span>
-        <motion.span variants={item}>d</motion.span>
-        <motion.span variants={item}>e</motion.span>
-        <motion.span variants={item}>t</motion.span>
-        <motion.span variants={item}>a</motion.span>
-        <motion.span variants={item}>y</motion.span>
-        <motion.span variants={item}>o</motion.span>
-        <motion.span className="ml-4 " variants={item}>
-          A
-        </motion.span>
-        <motion.span variants={item}>y</motion.span>
-        <motion.span variants={item}>o</motion.span>
-        <motion.span variants={item}>d</motion.span>
-        <motion.span variants={item}>e</motion.span>
-        <motion.span variants={item}>j</motion.span>
-        <motion.span variants={item}>i</motion.span>
-        <motion.span variants={item}>.</motion.span>
+        <div>
+          <motion.span variants={item}>A</motion.span>
+          <motion.span variants={item}>d</motion.span>
+          <motion.span variants={item}>e</motion.span>
+          <motion.span variants={item}>t</motion.span>
+          <motion.span variants={item}>a</motion.span>
+          <motion.span variants={item}>y</motion.span>
+          <motion.span variants={item}>o</motion.span>
+        </div>
+
+        <div className="md:ml-4">
+          <motion.span variants={item}>A</motion.span>
+          <motion.span variants={item}>y</motion.span>
+          <motion.span variants={item}>o</motion.span>
+          <motion.span variants={item}>d</motion.span>
+          <motion.span variants={item}>e</motion.span>
+          <motion.span variants={item}>j</motion.span>
+          <motion.span variants={item}>i</motion.span>
+          <motion.span variants={item}>.</motion.span>
+        </div>
       </motion.h1>
       <motion.h2
         initial={{ opacity: 0, x: 50 }}
@@ -72,7 +75,8 @@ const Home = ({ show }) => {
         transition={{ duration: 0.5 }}
         className="py-3 md:w-2/3 text-sub ff"
       >
-        I create beautiful and responsive website 🔥 .
+        I create beautiful and responsive website 🔥 . Becoming a better
+        developer everyday
       </motion.p>
       <Link to="/contact">
         <motion.button className="border-[#64ffda] px-8 py-3 my-3 border rounded-sm hover:bg-[#233554] text-xl font-thin ff">

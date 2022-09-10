@@ -43,3 +43,7 @@ input, textarea{
     border: none;
     outline: none;
 }
+
+pdf{
+    height: 900px;
+}

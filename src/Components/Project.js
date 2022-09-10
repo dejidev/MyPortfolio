@@ -2,6 +2,8 @@ import React from "react";
 import weather from "../Images/weather.png";
 import short from "../Images/shor.png";
 import fylo from "../Images/fylo.png";
+import calc from "../Images/calc.png";
+import ip from "../Images/ip.png";
 import { BsLink45Deg } from "react-icons/bs";
 import { AiFillGithub } from "react-icons/ai";
 import { motion, AnimatePresence } from "framer-motion";
@@ -34,10 +36,18 @@ const Project = ({ show }) => {
                 weather forecast and the weather forecast for the next seven
                 days.
                 <div className="flex text-3xl">
-                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://weather-react-p.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <BsLink45Deg className="mr-2" />
                   </a>
-                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://github.com/dejidev/Weather-Application"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <AiFillGithub />
                   </a>
                 </div>
@@ -79,10 +89,18 @@ const Project = ({ show }) => {
                 by Frontend Mentor. ShortCode API was used while building the
                 link shortener.
                 <div className="flex text-3xl">
-                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="http://urlshor.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <BsLink45Deg className="mr-2" />
                   </a>
-                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://github.com/dejidev/URL-Shortener"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <AiFillGithub />
                   </a>
                 </div>
@@ -143,7 +161,7 @@ const Project = ({ show }) => {
                   x: 0,
                 }}
                 transition={{ duration: 1 }}
-                src={weather}
+                src={ip}
                 alt="ip_tracker"
                 className="sm:w-1/2 rounded-b-lg sm:rounded-lg"
               />
@@ -171,10 +189,18 @@ const Project = ({ show }) => {
                 This is a landing page, but not your regular landing page,
                 because it actually looks nice
                 <div className="flex text-3xl">
-                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://dejidev.github.io/fylo/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <BsLink45Deg className="mr-2" />
                   </a>
-                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://github.com/dejidev/fylo"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <AiFillGithub />
                   </a>
                 </div>
@@ -217,10 +243,18 @@ const Project = ({ show }) => {
                 A simple calculator with a concentrated style. A red and yellow
                 mode this time. Red for dark, Yellow for Light.
                 <div className="flex text-3xl">
-                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://dejidev.github.io/Calculator/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <BsLink45Deg className="mr-2" />
                   </a>
-                  <a href="http://" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://github.com/dejidev/Calculator"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <AiFillGithub />
                   </a>
                 </div>
@@ -234,8 +268,8 @@ const Project = ({ show }) => {
                   x: 0,
                 }}
                 transition={{ duration: 1 }}
-                src={weather}
-                alt="weather application"
+                src={calc}
+                alt="Calculator"
                 className="sm:w-1/2 rounded-b-lg sm:rounded-lg"
               />
             </AnimatePresence>
