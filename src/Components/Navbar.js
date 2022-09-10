@@ -9,7 +9,6 @@ import Social from "./Social";
 const Navbar = () => {
   const [show, setShow] = useState(false);
   const [rotate, setRotate] = useState(false);
-  console.log(show);
 
   const variants = {
     hidden: { opacity: 0 },
