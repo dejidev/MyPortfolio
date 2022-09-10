@@ -4,7 +4,6 @@ import { MdOutlineMyLocation } from "react-icons/md";
 import img from "../Images/images.jfif";
 import { motion } from "framer-motion";
 
-
 const About = ({ show }) => {
   return (
     <div
@@ -18,14 +17,14 @@ const About = ({ show }) => {
             opacity: 1,
             y: 0,
           }}
-          transition={{ duration: 1 }}
-          className="sm:w-1/2 text-center text-sub sm:p-5 sm:pl-10 sm:text-xl "
+          transition={{ duration: 0.5 }}
+          className="sm:w-1/2 text-center text-name sm:p-5 sm:pl-10 sm:text-xl "
         >
-          I`m a Frontend Developer with proficiency. I am a hardworking and
-          passionate job seeker with strong organizational skills eager to
-          secure entry-level frontend developer position / frontend Internship
-          position. Ready to help team achieve company goals. I have worked on
-          amazing projects.
+          I`m a Frontend Developer with proficiency in React JS. I am a
+          hardworking and a passionate job seeker with strong organizational
+          skills eager to secure entry-level frontend developer position /
+          frontend Internship position. Ready to help the team achieve company
+          goals. I have worked on amazing projects.
           <section className=" mt-2 sm:text-xl text-[#64ffda] text-center">
             <div className="flex items-center justify-center my-3">
               <TbPhone />
@@ -43,12 +42,12 @@ const About = ({ show }) => {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, zoom:1 }}
+          initial={{ opacity: 0.4, zoom: 1 }}
           animate={{
             opacity: 1,
-            zoom: 0
+            zoom: 0,
           }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 0.5 }}
           className="sm:w-1/2 flex justify-center pt-5"
         >
           <div className=" sm:w-1/2 border-2 border-[#64ffda]">
