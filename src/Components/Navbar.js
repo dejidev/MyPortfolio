@@ -33,7 +33,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="py-5 px-5 md:px-12  nav ">
+    <div className="py-5 px-5 md:px-12  ff ">
       <section className=" flex items-center justify-between ">
         <div className="sm:w-1/4 flex justify-start">
           <Link to="/">
@@ -62,9 +62,9 @@ const Navbar = () => {
           initial="hidden"
           animate="show"
           transition={{ duration: 0.3, delay: 0.05, staggerChildren: 0.2 }}
-          className="hidden sm:flex sm:w-3/4 justify-evenly md:w-1/2 text-[#a8b2d1] items-center"
+          className="hidden sm:flex sm:w-3/4 justify-evenly lg:w-2/3 text-[#a8b2d1] items-center font-harline text-sm"
         >
-          <span className="text-[#64ffda] italic">&lt;ul&gt;</span>
+          <span className="text-[#64ffda] italic ">&lt;ul&gt;</span>
           <motion.div variants={item} className="flex flex-col ">
             <Link
               to="/about"
@@ -96,10 +96,10 @@ const Navbar = () => {
           <motion.div variants={item}>
             {" "}
             <Link
-              to="/skills"
+              to="/contact"
               className="hover:text-[#64ffda] focus:text-[#64ffda]"
             >
-              Skills
+              Contact Me
             </Link>
           </motion.div>
 
@@ -133,8 +133,8 @@ const Navbar = () => {
           <Link to="/experience" onClick={() => setShow(!show)}>
             Experience
           </Link>
-          <Link to="/skills" onClick={() => setShow(!show)}>
-            Skills
+          <Link to="/contact" onClick={() => setShow(!show)}>
+            Contact Me
           </Link>
           <p>Resume</p>
         </div>

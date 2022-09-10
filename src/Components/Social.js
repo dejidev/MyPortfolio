@@ -1,33 +1,34 @@
 import React from "react";
-import { FaTwitterSquare, FaGithubSquare } from "react-icons/fa";
-import { AiFillLinkedin } from "react-icons/ai";
+import { FaLinkedinIn } from "react-icons/fa";
+import { BsTwitter } from "react-icons/bs";
+import { TbBrandGithub } from "react-icons/tb";
 
 const Social = () => {
   return (
-    <div className="text-4xl ">
+    <div className="text-2xl sm:text-4xl">
       <a
         href="http://"
         target="_blank"
         rel="noopener noreferrer"
-        className="hover:text-[#233554] py-5 "
+        className="hover:text-name "
       >
-        <FaTwitterSquare className="hover:bg-[#64ffda] " />
+        <BsTwitter className="hover:py-1" />
       </a>
       <a
         href="http://"
         target="_blank"
         rel="noopener noreferrer "
-        className="hover:text-[#233554]  py-5 "
+        className="hover:text-name"
       >
-        <FaGithubSquare className="hover:bg-[#64ffda]" />
+        <TbBrandGithub className="my-5 hover:py-1" />
       </a>
       <a
         href="http://"
         target="_blank"
         rel="noopener noreferrer"
-        className="hover:text-[#233554] py-5"
+        className="hover:text-name "
       >
-        <AiFillLinkedin className="hover:bg-[#64ffda]" />
+        <FaLinkedinIn className="hover:py-1" />
       </a>
     </div>
   );

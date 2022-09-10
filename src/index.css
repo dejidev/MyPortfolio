@@ -20,9 +20,8 @@
 
 body{
     font-family: 'Calibrel' !important;
-        --tw-bg-opacity: 1;
-            background-color: rgb(10 25 47 / var(--tw-bg-opacity));
-
+    --tw-bg-opacity: 1;
+    background-color: rgb(10 25 47 / var(--tw-bg-opacity));
 }
 
 
@@ -38,4 +37,9 @@ body{
 
 .ff{
     font-family: 'SFMono';
+}
+
+input, textarea{
+    border: none;
+    outline: none;
 }

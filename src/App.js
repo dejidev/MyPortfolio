@@ -4,7 +4,7 @@ import "./App.css";
 import About from "./Components/About";
 import Experience from "./Components/Experience";
 import Project from "./Components/Project";
-import Skills from "./Components/Skill";
+import Contact from "./Components/Contact";
 import Loading from "./Components/Loading";
 import Home from "./Components/Home";
 import SharedLayout from "./Components/SharedLayout";
@@ -21,7 +21,7 @@ function App({ show, setShow }) {
             <Route index element={<Home show={show} />} />
             <Route path="/about" element={<About show={show} />} />
             <Route path="/experience" element={<Experience show={show} />} />
-            <Route path="/skills" element={<Skills show={show} />} />
+            <Route path="/contact" element={<Contact show={show} />} />
             <Route path="/projects" element={<Project show={show} />} />
           </Route>
         </Routes>
