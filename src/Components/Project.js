@@ -79,7 +79,7 @@ const Project = ({ show }) => {
                 x: 0,
               }}
               transition={{ duration: 1 }}
-              className="sm:w-1/2   bg-[#233554] p-4"
+              className="sm:w-1/2 bg-[#233554] p-4"
             >
               This is a Link shortener created with React JS. It's a challenge
               by Frontend Mentor. ShortCode API was used while building the link
