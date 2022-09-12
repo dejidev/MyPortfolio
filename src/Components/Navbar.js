@@ -98,13 +98,12 @@ const Navbar = () => {
               to="/contact"
               className="hover:text-[#64ffda] focus:text-[#64ffda]"
             >
-              Contact Me
+              Contact 
             </Link>
           </motion.div>
 
           {/* <motion.p variants={item}>Resume</motion.p> */}
           <motion.div variants={item}>
-            {" "}
             <Link
               to="/resume"
               className="border-[#64ffda] px-3 py-1 border rounded-sm hover:bg-[#233554]"
@@ -121,7 +120,7 @@ const Navbar = () => {
       </section>
 
       <nav
-        className={`sm:hidden top-0 right-0 bg-navv absolute h-screen w-2/3 ease-in-out duration-300 flex items-center justify-center
+        className={`sm:hidden top-0 right-0 bg-navv absolute h-screen w-2/3 z-4 ease-in-out duration-300 flex items-center justify-center
         ${show ? "translate-x-0 " : "translate-x-full"}`}
       >
         <div

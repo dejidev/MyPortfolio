@@ -14,7 +14,9 @@ function App({ show, setShow }) {
   const [loading, setLoading] = useState(true);
 
   return (
-    <main className={`bg-[#0a192f]  text-[#64ffda] py-5 px-5 md:px-5 relative`}>
+    <main
+      className={`bg-[#0a192f]  text-[#64ffda] py-5 px-5 md:px-5 relative min-h-screen overflow-x-hidden`}
+    >
       {loading ? (
         <Loading setLoading={setLoading} />
       ) : (
