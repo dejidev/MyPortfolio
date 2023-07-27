@@ -5,8 +5,9 @@ import { MdClose } from "react-icons/md";
 import { TbWebhook } from "react-icons/tb";
 import { motion } from "framer-motion";
 import Social from "./Social";
+import ScrollToTopButton from "./ScrollToTop";
 
-const Navbar = () => {
+const Navbar = ({ scrollToElement }) => {
   const [show, setShow] = useState(false);
   const [rotate, setRotate] = useState(false);
 
@@ -50,7 +51,7 @@ const Navbar = () => {
                 transition={{ duration: 1 }}
                 onClick={() => setRotate(!rotate)}
               >
-                <TbWebhook />
+                <TbWebhook onClick={() => setShow(false)} />
               </motion.div>
             </motion.div>
           </Link>
@@ -65,51 +66,48 @@ const Navbar = () => {
         >
           <span className="text-[#64ffda] italic ">&lt;ul&gt;</span>
           <motion.div variants={item} className="flex flex-col ">
-            <Link
-              to="/about"
+            <button
+              onClick={() => scrollToElement("about")}
               className="hover:text-[#64ffda] focus:text-[#64ffda]"
             >
               About
-            </Link>
+            </button>
           </motion.div>
           <motion.div variants={item}>
-            {" "}
-            <Link
-              to="/projects"
+            <button
+              onClick={() => scrollToElement("project")}
               className="hover:text-[#64ffda] focus:text-[#64ffda]"
             >
-              Project
-            </Link>
+              Project{" "}
+            </button>
           </motion.div>
 
           <motion.div variants={item}>
-            {" "}
-            <Link
-              to="/experience"
+            <button
+              onClick={() => scrollToElement("experience")}
               className="hover:text-[#64ffda] focus:text-[#64ffda]"
             >
               Experience
-            </Link>
+            </button>
           </motion.div>
 
           <motion.div variants={item}>
-            {" "}
-            <Link
-              to="/contact"
+            <button
+              onClick={() => scrollToElement("contact")}
               className="hover:text-[#64ffda] focus:text-[#64ffda]"
             >
-              Contact 
-            </Link>
+              Contact
+            </button>
           </motion.div>
 
           {/* <motion.p variants={item}>Resume</motion.p> */}
           <motion.div variants={item}>
-            <Link
-              to="/resume"
+            <button
+              onClick={() => scrollToElement("resume")}
               className="border-[#64ffda] px-3 py-1 border rounded-sm hover:bg-[#233554]"
             >
               Resume
-            </Link>
+            </button>
           </motion.div>
           <span className="text-[#64ffda] italic">&lt;/ul&gt;</span>
         </motion.nav>
@@ -126,24 +124,28 @@ const Navbar = () => {
         <div
           className={`flex flex-col text-2xl justify-between items-center h-1/2 `}
         >
-          <Link to="/about" onClick={() => setShow(!show)}>
-            About
-          </Link>
-          <Link to="/projects" onClick={() => setShow(!show)}>
-            Projects
-          </Link>
-          <Link to="/experience" onClick={() => setShow(!show)}>
-            Experience
-          </Link>
-          <Link to="/contact" onClick={() => setShow(!show)}>
-            Contact Me
-          </Link>
+          <span onClick={() => scrollToElement("home")}>
+            <button onClick={() => setShow(!show)}>Home</button>
+          </span>
+          <span onClick={() => scrollToElement("about")}>
+            <button onClick={() => setShow(!show)}>About </button>
+          </span>
+          <span onClick={() => scrollToElement("project")}>
+            <button onClick={() => setShow(!show)}>Projects </button>
+          </span>
+          <span onClick={() => scrollToElement("experience")}>
+            <button onClick={() => setShow(!show)}> Experience</button>
+          </span>
+          <span onClick={() => scrollToElement("contact")}>
+            <button onClick={() => setShow(!show)}>Contact Me</button>
+          </span>
           <p>Resume</p>
         </div>
       </nav>
       <div className=" fixed bottom-32 right-4 sm:right-8 lg-right-16">
         <Social />
       </div>
+      <ScrollToTopButton className=" " />
     </div>
   );
 };

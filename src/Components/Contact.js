@@ -83,7 +83,7 @@ const Contact = ({ show }) => {
           className="flex flex-col sm:w-1/2"
           variants={variants}
           initial="hidden"
-          animate="show"
+          whileInView="show"
           transition={{ duration: 0.3, delay: 0.05, staggerChildren: 0.2 }}
         >
           <motion.div className="sm:flex " variants={item}>
@@ -131,7 +131,7 @@ const Contact = ({ show }) => {
 
         <motion.section
           initial={{ opacity: 0, x: 50 }}
-          animate={{
+          whileInView={{
             opacity: 1,
             x: 0,
           }}

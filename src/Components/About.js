@@ -1,7 +1,8 @@
+"use client";
 import React from "react";
 import { TbPhone, TbMail } from "react-icons/tb";
 import { MdOutlineMyLocation } from "react-icons/md";
-import img from "../Images/images.jfif";
+import img from "../Images/picofme.png";
 import { motion } from "framer-motion";
 
 const About = ({ show }) => {
@@ -13,18 +14,24 @@ const About = ({ show }) => {
       <div className="flex flex-col sm:flex-row justify-center items-center font-thin">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
-          animate={{
+          whileInView={{
             opacity: 1,
             y: 0,
           }}
           transition={{ duration: 0.5 }}
           className="sm:w-1/2 text-center text-name sm:p-5 sm:pl-10 sm:text-xl "
         >
-          I`m a Frontend Developer with proficiency in React JS. I am a
-          hardworking and a passionate job seeker with strong organizational
-          skills eager to secure entry-level frontend developer position /
-          frontend Internship position. Ready to help the team achieve company
-          goals. I have worked on amazing projects.
+          <p>
+            Hello! I'm a Frontend Developer with a high level of skill in
+            creating exceptional web applications. With expertise in React JS, I
+            craft user-friendly and visually appealing websites that captivate
+            users.
+          </p>
+          <p>
+            As a dedicated professional, I am eager to contribute my talents to
+            your projects. Let's collaborate and build remarkable web
+            experiences together!
+          </p>
           <section className=" mt-2 sm:text-xl text-[#64ffda] text-center">
             <div className="flex items-center justify-center my-3">
               <TbPhone />
@@ -43,7 +50,7 @@ const About = ({ show }) => {
 
         <motion.div
           initial={{ opacity: 0.4, zoom: 1 }}
-          animate={{
+          whileInView={{
             opacity: 1,
             zoom: 0,
           }}

@@ -1,8 +1,12 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
 import { motion } from "framer-motion";
+import About from "./About";
+import Experience from "./Experience";
+import Contact from "./Contact";
+import Project from "./Project";
+import Resume from "./Resume";
 
-const Home = ({ show }) => {
+const Home = ({ show, scrollToElement }) => {
   const variants = {
     hidden: { opacity: 0 },
     show: {
@@ -24,15 +28,15 @@ const Home = ({ show }) => {
     },
   };
   return (
-    <div className={`${show && "blur-md"} pt-2 px-5 md:px-12 lg:pl-24`}>
+    <div className={`${show && "blur-md"} pt-2 px-5 md:px-12 lg:pl-24 `}>
       <span className="text-[#64ffda] italic pt-2 pb-8 ff">&lt;body&gt;</span>
-      <p className=" pb-3  ff">Hi 🙂 , my name is </p>
+      <p className=" p-3  ff">Hi 🙂 , my name is </p>
       <motion.h1
         variants={variants}
         initial="hidden"
         animate="show"
         transition={{ duration: 0.01, delay: 0.05, staggerChildren: 0.2 }}
-        className="font-extrabold sm:text-8xl text-7xl text-name big tracking-wide sm:pt-3 md:flex"
+        className="font-extrabold sm:text-8xl text-7xl text-name big tracking-wide sm:pt-3 md:flex mt-4"
       >
         <div>
           <motion.span variants={item}>A</motion.span>
@@ -75,15 +79,33 @@ const Home = ({ show }) => {
         transition={{ duration: 0.5 }}
         className="py-3 md:w-2/3 text-sub ff"
       >
-        I create beautiful and responsive website 🔥 . Becoming a better
-        developer everyday
+        Welcome! I'm a passionate Frontend Developer with a focus on creating
+        stunning, responsive web applications 🔥 . With a strong eye for design
+        and a commitment to clean code, I bring ideas to life that leave a
+        lasting impression.
       </motion.p>
-      <Link to="/contact">
+      <div onClick={() => scrollToElement("contact")}>
         <motion.button className="border-[#64ffda] px-8 py-3 my-3 border rounded-sm hover:bg-[#233554] text-xl font-thin ff">
           Contact Me
         </motion.button>
-      </Link>
-
+      </div>
+      <div>
+        <div id="about" className="md:py-10  py-6">
+          <About show={show} />
+        </div>
+        <div id="project" className="md:py-10  py-6">
+          <Project show={show} />
+        </div>
+        <div id="experience" className="md:py-10  py-6">
+          <Experience show={show} />
+        </div>
+        <div id="contact" className="md:py-10  py-6">
+          <Contact show={show} />
+        </div>
+        <div id="resume" className="md:py-10  py-6">
+          {/* <Resume /> */}
+        </div>
+      </div>
       <div className="text-[#64ffda] italic ff mt-10">&lt;/body&gt;</div>
     </div>
   );

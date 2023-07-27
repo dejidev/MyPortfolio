@@ -2,8 +2,10 @@ import React from "react";
 import weather from "../Images/weather.png";
 import short from "../Images/shor.png";
 import fylo from "../Images/fylo.png";
-import calc from "../Images/calc.png";
+import excuse from "../Images/excuse.png";
 import ip from "../Images/ip.png";
+import yablaze from "../Images/yablaze.png";
+import netflix from "../Images/netflix.png";
 import { BsLink45Deg } from "react-icons/bs";
 import { AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
@@ -30,9 +32,10 @@ const Project = ({ show }) => {
               transition={{ duration: 1 }}
               className="sm:w-1/2 bg-[#233554] p-4 "
             >
-              This Weather application was created with react JS, styled with
-              Tailwind CSS. Open weather API was integrated to get the current
-              weather forecast and the weather forecast for the next seven days.
+              A weather application built with React JS and styled using
+              Tailwind CSS. It leverages the OpenWeather API to provide
+              real-time weather forecasts and weekly weather predictions for
+              users.
               <div className="flex text-3xl">
                 <a
                   href="https://weather-react-p.netlify.app/"
@@ -69,7 +72,7 @@ const Project = ({ show }) => {
         <section className="pb-5">
           <h2 className="text-name sm:text-xl py-3">
             <span className="text-[#64ffda]">02.</span>Link Shortener
-            Application
+            Application:
           </h2>
           <div className="flex justify-center items-center flex-col sm:flex-row-reverse ">
             <motion.article
@@ -81,9 +84,10 @@ const Project = ({ show }) => {
               transition={{ duration: 1 }}
               className="sm:w-1/2 bg-[#233554] p-4"
             >
-              This is a Link shortener created with React JS. It's a challenge
-              by Frontend Mentor. ShortCode API was used while building the link
-              shortener.
+              This project, inspired by a Frontend Mentor challenge, showcases
+              my React JS proficiency. It allows users to shorten long URLs
+              using the ShortCode API, providing an easy and convenient way to
+              share links.
               <div className="flex text-3xl">
                 <a
                   href="http://urlshor.netlify.app/"
@@ -130,9 +134,10 @@ const Project = ({ show }) => {
               transition={{ duration: 1 }}
               className="sm:w-1/2 bg-[#233554] p-4"
             >
-              This is an IP Address tracker, it takes in the IP address as input
-              and locates its location, manually and on a map. The map was made
-              with Leaflet JS. GeoIpfy API is used to locate the IP Address.
+              The IP Tracker Application utilizes the GeoIpfy API and Leaflet JS
+              to locate and visualize the geographical position of a given IP
+              address. This project demonstrates my ability to work with APIs
+              and interactive mapping libraries.
               <div className="flex text-3xl">
                 <a href="http://" target="_blank" rel="noopener noreferrer">
                   <BsLink45Deg className="mr-2" />
@@ -160,7 +165,8 @@ const Project = ({ show }) => {
       <div>
         <section className="pb-5">
           <h2 className="text-name sm:text-xl py-3">
-            <span className="text-[#64ffda]">04.</span>Fylo Landing Page
+            <span className="text-[#64ffda]">04.</span>ExcuseMe! - The Random
+            Excuse Generator
           </h2>
           <div className="flex justify-center items-center flex-col sm:flex-row-reverse ">
             <motion.article
@@ -172,8 +178,111 @@ const Project = ({ show }) => {
               transition={{ duration: 1 }}
               className="sm:w-1/2 bg-[#233554] p-4"
             >
-              This is a landing page, but not your regular landing page, because
-              it actually looks nice
+              Experience a touch of humor with ExcuseMe! This playful and
+              amusing app integrates an API to generate random excuses for any
+              situation. Need a creative way to dodge a commitment? Or perhaps a
+              witty response to a mishap? ExcuseMe! has got you covered!
+              <div className="flex text-3xl">
+                <a
+                  href="https://github.com/dejidev/Make_An_Excuse/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <BsLink45Deg className="mr-2" />
+                </a>
+                <a
+                  href="https://make-excuse.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <AiFillGithub />
+                </a>
+              </div>
+            </motion.article>
+            <motion.img
+              initial={{ opacity: 0.5, x: -100 }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+              }}
+              transition={{ duration: 1 }}
+              src={excuse}
+              alt="excuse me"
+              className="sm:w-1/2  rounded-b-lg sm:rounded-lg"
+            />
+          </div>
+        </section>
+      </div>
+
+      <div>
+        <section className="pb-5">
+          <h2 className="text-name sm:text-xl py-3">
+            <span className="text-[#64ffda]">05.</span>Netflix Clone
+          </h2>
+          <div className="flex justify-center items-center flex-col sm:flex-row-reverse ">
+            <motion.article
+              initial={{ opacity: 0.5, x: 100 }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+              }}
+              transition={{ duration: 1 }}
+              className="sm:w-1/2 bg-[#233554] p-4"
+            >
+              Experience the world of cinema, a Next.js and TypeScript-powered
+              Netflix Clone. Browse through a vast collection of movies and TV
+              shows using real movie APIs. Enjoy a seamless and responsive
+              streaming experience, just like the original platform.
+              <div className="flex text-3xl">
+                <a
+                  href="https://github.com/dejidev/Netflix-Clone"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <BsLink45Deg className="mr-2" />
+                </a>
+                <a
+                  href="netflix-clone-dejidev.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <AiFillGithub />
+                </a>
+              </div>
+            </motion.article>
+            <motion.img
+              initial={{ opacity: 0.5, x: -100 }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+              }}
+              transition={{ duration: 1 }}
+              src={netflix}
+              alt="netflix"
+              className="sm:w-1/2  rounded-b-lg sm:rounded-lg"
+            />
+          </div>
+        </section>
+      </div>
+
+      <div>
+        <section className="pb-5">
+          <h2 className="text-name sm:text-xl py-3">
+            <span className="text-[#64ffda]">06.</span>Fylo Landing Page
+          </h2>
+          <div className="flex justify-center items-center flex-col sm:flex-row-reverse ">
+            <motion.article
+              initial={{ opacity: 0.5, x: 100 }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+              }}
+              transition={{ duration: 1 }}
+              className="sm:w-1/2 bg-[#233554] p-4"
+            >
+              The Fylo Landing Page is not your ordinary landing page. It stands
+              out with an appealing design and smooth user experience. This
+              project highlights my keen eye for design and attention to detail.
               <div className="flex text-3xl">
                 <a
                   href="https://dejidev.github.io/fylo/"
@@ -209,10 +318,9 @@ const Project = ({ show }) => {
       <div>
         <section className="pb-5">
           <h2 className="text-name sm:text-xl py-3">
-            <span className="text-[#64ffda]">04.</span>Toggle View Simple
-            Mathematical Calculator{" "}
+            <span className="text-[#64ffda]">07.</span>Iyablaze Landing Page
           </h2>
-          <div className="flex justify-center items-center flex-col sm:flex-row ">
+          <div className="flex justify-center items-center flex-col sm:flex-row  ">
             <motion.article
               initial={{ opacity: 0.5, x: 100 }}
               whileInView={{
@@ -222,18 +330,20 @@ const Project = ({ show }) => {
               transition={{ duration: 1 }}
               className="sm:w-1/2 bg-[#233554] p-4"
             >
-              A simple calculator with a concentrated style. A red and yellow
-              mode this time. Red for dark, Yellow for Light.
+              Explore the modern and colorful design of the Iyablaze Landing
+              Page. This captivating project, built with React, features
+              captivating live animations that leave a lasting impression on
+              visitors.
               <div className="flex text-3xl">
                 <a
-                  href="https://dejidev.github.io/Calculator/"
+                  href="https://make-excuse.netlify.app"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <BsLink45Deg className="mr-2" />
                 </a>
                 <a
-                  href="https://github.com/dejidev/Calculator"
+                  href="https://loyaltymanage.netlify.app"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -248,8 +358,8 @@ const Project = ({ show }) => {
                 x: 0,
               }}
               transition={{ duration: 1 }}
-              src={calc}
-              alt="Calculator"
+              src={yablaze}
+              alt="yablaze"
               className="sm:w-1/2 rounded-b-lg sm:rounded-lg"
             />
           </div>
