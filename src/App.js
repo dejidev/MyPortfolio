@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState} from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Loading from "./Components/Loading";
@@ -9,9 +9,6 @@ import Footer from "./Components/Footer";
 function App({ show, setShow }) {
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    setLoading(false);
-  }, []);
 
   const scrollToElement = (id) => {
     const element = document.getElementById(id);
