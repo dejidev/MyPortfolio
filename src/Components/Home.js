@@ -103,7 +103,7 @@ const Home = ({ show, scrollToElement }) => {
           <Contact show={show} />
         </div>
         <div id="resume" className="md:py-10  py-8">
-          {/* <Resume /> */}
+          <Resume />
         </div>
       </div>
       <div className="text-[#64ffda] italic ff mt-10">&lt;/body&gt;</div>

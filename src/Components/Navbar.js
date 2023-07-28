@@ -11,6 +11,9 @@ const Navbar = ({ scrollToElement }) => {
   const [show, setShow] = useState(false);
   const [rotate, setRotate] = useState(false);
 
+  const resumeLink =
+    "https://drive.google.com/file/d/1mIXHkDjWLDer788Nc_06Hh64BnpT40T6/view?usp=sharing";
+
   const variants = {
     hidden: { opacity: 0 },
     show: {
@@ -103,10 +106,12 @@ const Navbar = ({ scrollToElement }) => {
           {/* <motion.p variants={item}>Resume</motion.p> */}
           <motion.div variants={item}>
             <button
-              onClick={() => scrollToElement("resume")}
+              // onClick={() => scrollToElement("resume")}
               className="border-[#64ffda] px-3 py-1 border rounded-sm hover:bg-[#233554]"
             >
-              Resume
+              <a href={resumeLink} target="_blank" rel="noopener noreferrer">
+                Resume
+              </a>
             </button>
           </motion.div>
           <span className="text-[#64ffda] italic">&lt;/ul&gt;</span>
@@ -139,7 +144,13 @@ const Navbar = ({ scrollToElement }) => {
           <span onClick={() => scrollToElement("contact")}>
             <button onClick={() => setShow(!show)}>Contact Me</button>
           </span>
-          <p>Resume</p>
+          <p>
+            {" "}
+            <a href={resumeLink} target="_blank" rel="noopener noreferrer">
+              {" "}
+              Resume
+            </a>
+          </p>
         </div>
       </nav>
       <div className=" fixed bottom-32 right-4 sm:right-8 lg-right-16">
