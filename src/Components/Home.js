@@ -23,7 +23,7 @@ const Home = ({ show, scrollToElement }) => {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.3,
+        duration: 0.8,
       },
     },
   };
@@ -65,7 +65,7 @@ const Home = ({ show, scrollToElement }) => {
           opacity: 1,
           x: 0,
         }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.8 }}
         className="text-sub text-5xl font-bold pb-3 lg:text-7xl"
       >
         I am a Frontend Developer.
@@ -76,7 +76,7 @@ const Home = ({ show, scrollToElement }) => {
           opacity: 1,
           x: 0,
         }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.8 }}
         className="py-3 md:w-2/3 text-sub ff"
       >
         Welcome! I'm a passionate Frontend Developer with a focus on creating
@@ -90,19 +90,19 @@ const Home = ({ show, scrollToElement }) => {
         </motion.button>
       </div>
       <div>
-        <div id="about" className="md:py-10  py-6">
+        <div id="about" className="md:py-10  py-8">
           <About show={show} />
         </div>
-        <div id="project" className="md:py-10  py-6">
+        <div id="project" className="md:py-10  py-8">
           <Project show={show} />
         </div>
-        <div id="experience" className="md:py-10  py-6">
+        <div id="experience" className="md:py-10  py-8">
           <Experience show={show} />
         </div>
-        <div id="contact" className="md:py-10  py-6">
+        <div id="contact" className="md:py-10  py-8">
           <Contact show={show} />
         </div>
-        <div id="resume" className="md:py-10  py-6">
+        <div id="resume" className="md:py-10  py-8">
           {/* <Resume /> */}
         </div>
       </div>

@@ -55,7 +55,7 @@ const Contact = ({ show }) => {
     show: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.2,
+        staggerChildren: 0.3,
       },
     },
   };
@@ -66,7 +66,7 @@ const Contact = ({ show }) => {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.8,
+        duration: 1,
       },
     },
   };
@@ -84,7 +84,7 @@ const Contact = ({ show }) => {
           variants={variants}
           initial="hidden"
           whileInView="show"
-          transition={{ duration: 0.3, delay: 0.05, staggerChildren: 0.2 }}
+          transition={{ duration: 0.5, delay: 0.05, staggerChildren: 0.2 }}
         >
           <motion.div className="sm:flex " variants={item}>
             <input

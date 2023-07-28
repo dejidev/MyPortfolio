@@ -30,13 +30,13 @@ const Project = ({ show }) => {
                 x: 0,
               }}
               transition={{ duration: 1 }}
-              className="sm:w-1/2 bg-[#233554] p-4 "
+              className="sm:w-1/2 bg-[#233554] p-4 text-sm sm:text-base"
             >
               A weather application built with React JS and styled using
               Tailwind CSS. It leverages the OpenWeather API to provide
               real-time weather forecasts and weekly weather predictions for
               users.
-              <div className="flex text-3xl">
+              <div className="flex text-2xl">
                 <a
                   href="https://weather-react-p.netlify.app/"
                   target="_blank"
@@ -82,13 +82,13 @@ const Project = ({ show }) => {
                 x: 0,
               }}
               transition={{ duration: 1 }}
-              className="sm:w-1/2 bg-[#233554] p-4"
+              className="sm:w-1/2 bg-[#233554] p-4 text-sm sm:text-base"
             >
               This project, inspired by a Frontend Mentor challenge, showcases
               my React JS proficiency. It allows users to shorten long URLs
               using the ShortCode API, providing an easy and convenient way to
               share links.
-              <div className="flex text-3xl">
+              <div className="flex text-2xl">
                 <a
                   href="http://urlshor.netlify.app/"
                   target="_blank"
@@ -132,13 +132,13 @@ const Project = ({ show }) => {
                 x: 0,
               }}
               transition={{ duration: 1 }}
-              className="sm:w-1/2 bg-[#233554] p-4"
+              className="sm:w-1/2 bg-[#233554] p-4 text-sm sm:text-base"
             >
               The IP Tracker Application utilizes the GeoIpfy API and Leaflet JS
               to locate and visualize the geographical position of a given IP
               address. This project demonstrates my ability to work with APIs
               and interactive mapping libraries.
-              <div className="flex text-3xl">
+              <div className="flex text-2xl">
                 <a href="http://" target="_blank" rel="noopener noreferrer">
                   <BsLink45Deg className="mr-2" />
                 </a>
@@ -176,13 +176,13 @@ const Project = ({ show }) => {
                 x: 0,
               }}
               transition={{ duration: 1 }}
-              className="sm:w-1/2 bg-[#233554] p-4"
+              className="sm:w-1/2 bg-[#233554] p-4 text-sm sm:text-base"
             >
               Experience a touch of humor with ExcuseMe! This playful and
               amusing app integrates an API to generate random excuses for any
               situation. Need a creative way to dodge a commitment? Or perhaps a
               witty response to a mishap? ExcuseMe! has got you covered!
-              <div className="flex text-3xl">
+              <div className="flex text-2xl">
                 <a
                   href="https://github.com/dejidev/Make_An_Excuse/"
                   target="_blank"
@@ -227,13 +227,13 @@ const Project = ({ show }) => {
                 x: 0,
               }}
               transition={{ duration: 1 }}
-              className="sm:w-1/2 bg-[#233554] p-4"
+              className="sm:w-1/2 bg-[#233554] p-4 text-sm sm:text-base"
             >
               Experience the world of cinema, a Next.js and TypeScript-powered
               Netflix Clone. Browse through a vast collection of movies and TV
               shows using real movie APIs. Enjoy a seamless and responsive
               streaming experience, just like the original platform.
-              <div className="flex text-3xl">
+              <div className="flex text-2xl">
                 <a
                   href="https://github.com/dejidev/Netflix-Clone"
                   target="_blank"
@@ -278,12 +278,12 @@ const Project = ({ show }) => {
                 x: 0,
               }}
               transition={{ duration: 1 }}
-              className="sm:w-1/2 bg-[#233554] p-4"
+              className="sm:w-1/2 bg-[#233554] p-4 text-sm sm:text-base"
             >
               The Fylo Landing Page is not your ordinary landing page. It stands
               out with an appealing design and smooth user experience. This
               project highlights my keen eye for design and attention to detail.
-              <div className="flex text-3xl">
+              <div className="flex text-2xl">
                 <a
                   href="https://dejidev.github.io/fylo/"
                   target="_blank"
@@ -328,13 +328,13 @@ const Project = ({ show }) => {
                 x: 0,
               }}
               transition={{ duration: 1 }}
-              className="sm:w-1/2 bg-[#233554] p-4"
+              className="sm:w-1/2 bg-[#233554] p-4 text-sm sm:text-base"
             >
               Explore the modern and colorful design of the Iyablaze Landing
               Page. This captivating project, built with React, features
               captivating live animations that leave a lasting impression on
               visitors.
-              <div className="flex text-3xl">
+              <div className="flex text-2xl">
                 <a
                   href="https://make-excuse.netlify.app"
                   target="_blank"

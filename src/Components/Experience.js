@@ -24,7 +24,7 @@ const Experience = ({ show }) => {
       opacity: 1,
       x: 0,
       transition: {
-        duration: 0.3,
+        duration: 0.5,
       },
     },
   };
@@ -35,7 +35,7 @@ const Experience = ({ show }) => {
       opacity: 1,
       x: 0,
       transition: {
-        duration: 0.3,
+        duration: 0.5,
       },
     },
   };
@@ -46,7 +46,7 @@ const Experience = ({ show }) => {
     >
       <div className="mb-10">
         <h1 className="text-name text-xl sm:text-2xl py-3">Skills</h1>
-        <div className="flex items-center text-name text-lg pb-3 ">
+        <div className="flex items-center text-name text-lg p-3 ">
           <span className="text-[#64ffda]">01.</span>
           <BiCodeAlt />
           <h1 className="pl-2"> Language</h1>
@@ -57,7 +57,7 @@ const Experience = ({ show }) => {
             variants={variants}
             initial="hidden"
             whileInView="show"
-            transition={{ duration: 0.01, delay: 0.05, staggerChildren: 0.2 }}
+            transition={{ duration: 0.02, delay: 0.05, staggerChildren: 0.2 }}
             className="text-center flex flex-wrap justify-center items-center text-name sm:w-2/3 md:w-1/2"
           >
             <motion.p
@@ -84,10 +84,16 @@ const Experience = ({ show }) => {
             >
               TypeScript
             </motion.p>
+            <motion.p
+              variants={item}
+              className="bg-[#233554] px-5 py-3 m-2 hover:text-[#64ffda]  hover:px-6"
+            >
+              Python{" "}
+            </motion.p>
           </motion.div>
         </div>
 
-        <div className="flex items-center text-name text-lg pb-3">
+        <div className="flex items-center text-name text-lg p-3">
           <span className="text-[#64ffda]">02.</span>
           <SiRobotframework />
           <h1 className="pl-2"> Framework</h1>
@@ -97,7 +103,7 @@ const Experience = ({ show }) => {
             variants={variants}
             initial="hidden"
             whileInView="show"
-            transition={{ duration: 0.01, delay: 0.05, staggerChildren: 0.2 }}
+            transition={{ duration: 0.02, delay: 0.05, staggerChildren: 0.2 }}
             className="text-center flex flex-wrap justify-center items-center text-name sm:w-2/3 md:w-1/2"
           >
             {" "}
@@ -128,7 +134,7 @@ const Experience = ({ show }) => {
           </motion.div>
         </div>
 
-        <div className="flex items-center text-name text-lg pb-3">
+        <div className="flex items-center text-name text-lg p-3">
           <span className="text-[#64ffda]">03.</span>
           <FaTools />
           <h1 className="pl-2"> Tools</h1>
@@ -138,7 +144,7 @@ const Experience = ({ show }) => {
             variants={variants}
             initial="hidden"
             whileInView="show"
-            transition={{ duration: 0.01, delay: 0.05, staggerChildren: 0.2 }}
+            transition={{ duration: 0.02, delay: 0.05, staggerChildren: 0.2 }}
             className="text-center flex flex-wrap justify-center items-center text-name sm:w-2/3 md:w-1/2"
           >
             {" "}
@@ -176,7 +182,7 @@ const Experience = ({ show }) => {
             variants={variants}
             initial="hidden"
             whileInView="show"
-            transition={{ duration: 0.01, delay: 0.05, staggerChildren: 0.2 }}
+            transition={{ duration: 0.02, delay: 0.05, staggerChildren: 0.2 }}
             className="sm:w-1/2"
           >
             <div className="flex items-center text-name text-lg pb-3">
@@ -186,10 +192,10 @@ const Experience = ({ show }) => {
 
             <motion.article
               variants={items}
-              className="pl-3 border-l-2 border-[#aa8b2d1] mb-3 font-thin"
+              className="pl-3 border-l sm:border-l-2 border-[#aa8b2d1] mb-6 font-thin"
             >
               <div>
-                <h2 className="text-sub ">BSc. Systems Engineering</h2>
+                <h2 className="text-sub pb-1">BSc. Systems Engineering</h2>
                 <h3>University of Lagos</h3>
                 <p className="text-sm text-name p-1">
                   As a passionate and dedicated Frontend Developer, I constantly
@@ -207,7 +213,7 @@ const Experience = ({ show }) => {
 
             <motion.article
               variants={items}
-              className="pl-3 border-l-2 border-[#aa8b2d1] mb-3 font-thin"
+              className="pl-3 border-l sm:border-l-2 border-[#aa8b2d1] mb-6 font-thin"
             >
               <div>
                 <h2 className="text-sub ">Tomia Community School </h2>
@@ -229,7 +235,7 @@ const Experience = ({ show }) => {
             variants={variants}
             initial="hidden"
             whileInView="show"
-            transition={{ duration: 0.01, delay: 0.05, staggerChildren: 0.2 }}
+            transition={{ duration: 0.02, delay: 0.05, staggerChildren: 0.2 }}
             className="sm:w-1/2"
           >
             <div className="flex items-center text-name text-lg pb-3">
@@ -239,7 +245,7 @@ const Experience = ({ show }) => {
 
             <motion.article
               variants={items}
-              className="pl-3 border-l-2 border-[#aa8b2d1] mb-3 font-thin"
+              className="pl-3 border-l sm:border-l-2 border-[#aa8b2d1] mb-6 font-thin"
             >
               <div>
                 <h2 className="text-sub ">Frontend Intern</h2>
@@ -259,13 +265,13 @@ const Experience = ({ show }) => {
 
             <motion.article
               variants={items}
-              className="pl-3 border-l-2 border-[#aa8b2d1] mb-3 font-thin"
+              className="pl-3 border-l sm:border-l-2 border-[#aa8b2d1] mb-6 font-thin"
             >
               <div>
                 <h2 className="text-sub ">Frontend Engineering Intern</h2>
                 <h3> Resavaton </h3>
                 <p className="text-sm text-name p-1">
-                  As a Frontend Intern at Reservation, I've had the privilege of
+                  As a Frontend Intern at Resavation, I've had the privilege of
                   working with a dynamic apartment rental startup, creating
                   captivating web interfaces from Figma designs. I've gained
                   hands-on experience with Next.js, developing responsive and
@@ -277,18 +283,19 @@ const Experience = ({ show }) => {
                 </p>
                 <div className="flex items-center">
                   <GoCalendar />
-                  <p>Sept 2022 </p>
+                  <p>May 2023 - July 2023 </p>
                 </div>
               </div>
             </motion.article>
 
             <motion.article
               variants={items}
-              className="pl-3 border-l-2 border-[#aa8b2d1] mb-3 font-thin"
+              className="pl-3 border-l sm:border-l-2 border-[#aa8b2d1] mb-6 font-thin"
             >
               <div>
                 <h2 className="text-sub ">
-                  Searching For a Junior Frontend Developer Role{" "}
+                  Searching For a Junior Frontend Developer/ Frontend Internship
+                  Role
                 </h2>
                 <h3>Hire Me 🙂</h3>
                 <div className="flex items-center">
