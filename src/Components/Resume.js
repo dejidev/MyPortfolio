@@ -2,7 +2,7 @@ import React from "react";
 
 const Resume = () => {
   const resumeLink =
-    "https://drive.google.com/file/d/1mIXHkDjWLDer788Nc_06Hh64BnpT40T6/view?usp=sharing";
+    "https://drive.google.com/file/d/1l88v3dLomdgIxzpZGFZdU-8td0EOTFyZ/view?usp=drive_link";
   return (
     <div>
       <a href={resumeLink} target="_blank" rel="noopener noreferrer">
