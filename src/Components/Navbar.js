@@ -12,7 +12,7 @@ const Navbar = ({ scrollToElement }) => {
   const [rotate, setRotate] = useState(false);
 
   const resumeLink =
-    "https://drive.google.com/file/d/1mIXHkDjWLDer788Nc_06Hh64BnpT40T6/view?usp=sharing";
+    "https://drive.google.com/file/d/1l88v3dLomdgIxzpZGFZdU-8td0EOTFyZ/view?usp=drive_link";
 
   const variants = {
     hidden: { opacity: 0 },
