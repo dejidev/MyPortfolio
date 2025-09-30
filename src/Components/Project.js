@@ -171,7 +171,7 @@ const Project = ({ show }) => {
               } gap-0 sm:gap-4`}>
 
               {/* Image Section */}
-              <motion.div
+              {/* <motion.div
                 variants={imageVariants}
                 whileHover="hover"
                 className="sm:w-1/2 w-full overflow-hidden rounded-t-lg sm:rounded-lg shadow-lg"
@@ -188,7 +188,41 @@ const Project = ({ show }) => {
                     className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                   />
                 </a>
+              </motion.div> */}
+
+
+
+              {/* Image Section */}
+              <motion.div
+                variants={imageVariants}
+                whileHover="hover"
+                className="sm:w-1/2 w-full relative group rounded-t-lg sm:rounded-lg shadow-lg"
+              >
+                {/* Decorative background (behind image) */}
+                <div className="absolute inset-0 rounded-lg blur-3xl bg-gradient-to-br from-[#64ffda]/10 to-transparent pointer-events-none" />
+
+                {/* Border frame with hover effect */}
+                <div className="absolute -inset-1 rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200 bg-gradient-to-r from-[#64ffda] to-[#64ffda]/50 pointer-events-none" />
+
+                <div className="relative border-2 border-[#64ffda] rounded-lg overflow-hidden bg-transparent">
+                  {/* Very subtle cyan overlay (won't darken). Fades out on hover */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-[#64ffda]/6 to-transparent opacity-100 group-hover:opacity-0 transition-opacity duration-300 pointer-events-none z-10" />
+
+                  <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className="block">
+                    <motion.img
+                      src={project.image}
+                      alt={project.title}
+                      whileHover={{ scale: 1.05 }}
+                      transition={{ duration: 0.4 }}
+                      className="w-full h-full object-cover transition-all duration-500 relative z-0 group-hover:brightness-105"
+                    />
+                  </a>
+                  <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-[#0a192f] to-transparent z-10"></div>
+                </div>
               </motion.div>
+
+
+
 
               {/* Content Section */}
               <motion.article
