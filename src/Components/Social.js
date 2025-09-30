@@ -7,7 +7,7 @@ const Social = () => {
   return (
     <div className="text-2xl sm:text-4xl">
       <a
-        href="https://twitter.com/adetayoayodeji1"
+        href="https://twitter.com/dejidv"
         target="_blank"
         rel="noopener noreferrer"
         className="hover:text-name "

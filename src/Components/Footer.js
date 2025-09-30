@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import { TbWebhook } from "react-icons/tb";
-import { motion } from "framer-motion";
+// import React, { useState } from "react";
+// import { Link } from "react-router-dom";
+// import { TbWebhook } from "react-icons/tb";
+// import { motion } from "framer-motion";
 import { FaEnvelope } from "react-icons/fa";
 
 const Footer = () => {
